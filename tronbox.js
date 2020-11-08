@@ -29,9 +29,9 @@ Then, run the migration with:
     },
     nile: {
       privateKey: process.env.PRIVATE_KEY_NILE,
-      fullNode: 'https://httpapi.nileex.io/wallet',
-      solidityNode: 'https://httpapi.nileex.io/walletsolidity',
-      eventServer: 'https://eventtest.nileex.io',
+      userFeePercentage: 100,
+      feeLimit: 1e8,
+      fullHost: 'https://api.nileex.io',
       network_id: '3'
     },
     development: {
@@ -44,7 +44,7 @@ Then, run the migration with:
     },
     compilers: {
       solc: {
-        // version: '0.5.4'
+        version: '0.5.4'
       }
     }
   }
